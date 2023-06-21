@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "outDir": "dist",
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "module": "CommonJS",
+      "target": "ESNext",
+      "jsx": "react",
+      "declaration": true,
+      "allowJs": true,
+      "esModuleInterop": true
+    },
+    "include": ["./index.ts"]
+  }

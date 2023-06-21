@@ -1,0 +1,11 @@
+src/
+
+tsconfig.json
+
+.env
+
+__tests__/
+
+node_modules/
+
+.gitignore

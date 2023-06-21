@@ -1,0 +1,31 @@
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@lucactus/zod':
+    specifier: ^1.0.0
+    version: 1.0.0
+  typescript:
+    specifier: ^5.1.3
+    version: 5.1.3
+
+packages:
+
+  /@lucactus/zod@1.0.0:
+    resolution: {integrity: sha512-69WgOvL3RELdFt/8x4VpbYBjfLLIy9H9fNXzV7SK1XHQ+oWnEXjXCcSOG7KeFmQaPiGEv5/7WBXvyIaf5bHrbg==}
+    dependencies:
+      zod: 3.21.4
+    dev: false
+
+  /typescript@5.1.3:
+    resolution: {integrity: sha512-XH627E9vkeqhlZFQuL+UsyAXEnibT0kWR2FWONlr4sTjvxyJYnyefgrkyECLzM5NenmKzRAy2rR/OlYLA1HkZw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: false
+
+  /zod@3.21.4:
+    resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
+    dev: false
