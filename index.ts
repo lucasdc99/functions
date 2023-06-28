@@ -1,10 +1,10 @@
 import { phoneSchema } from "@lucactus/zod";
 
-export function formatPhone(value: string | undefined | null) {
+export function formatPhone(code: `+${string}`, value: string | undefined | null) {
   const result = phoneSchema.safeParse(value);
 
   if (result.success && result.data.length > 0) {
-    return `+33 ${result.data.slice(0, 1)} ${result.data.slice(1).replace(/(..)(?=.)/g, "$1 ")}`;
+    return `${code} ${result.data.slice(0, 1)} ${result.data.slice(1).replace(/(..)(?=.)/g, "$1 ")}`;
   }
   return undefined;
 }
