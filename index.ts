@@ -1,6 +1,6 @@
 import { phoneSchema } from "@lucactus/zod";
 
-export function formatPhone(code: `+${string}`, value: string | undefined | null) {
+export function formatPhone(code: `+${string}`, value: string | undefined | null): string | undefined {
   const result = phoneSchema.safeParse(value);
 
   if (result.success && result.data.length > 0) {
