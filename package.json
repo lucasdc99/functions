@@ -12,11 +12,11 @@
   "author": "Lucas De Curtis",
   "license": "ISC",
   "dependencies": {
-    "@lucactus/zod": "^1.0.0"
+    "@lucactus/zod": "^1.0.4"
   },
   "devDependencies": {
     "@lucactus/prettier": "^1.0.0",
-    "typescript": "^5.1.3"
+    "typescript": "^5.2.2"
   },
   "prettier": "@lucactus/prettier"
 }
