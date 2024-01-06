@@ -25,14 +25,19 @@ export function getPercent(price: number): string {
   }).format(value / 100);
 }
 
-export function getFullName(options: {
-  firstName: string | null | undefined;
-  lastName: string | null | undefined;
-  first_name: string | null | undefined;
-  last_name: string | null | undefined;
-}): string {
-  const firstName = options.firstName || options.first_name;
-  const lastName = options.lastName || options.last_name;
+export function getFullName(
+  options:
+    | {
+        firstName: string | null | undefined;
+        lastName: string | null | undefined;
+      }
+    | {
+        first_name: string | null | undefined;
+        last_name: string | null | undefined;
+      }
+): string {
+  const firstName = "firstName" in options ? options.firstName : options.first_name;
+  const lastName = "lastName" in options ? options.lastName : options.last_name;
 
   if (firstName && lastName) {
     return `${firstName} ${lastName}`;
