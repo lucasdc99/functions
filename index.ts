@@ -10,7 +10,7 @@ export function formatPhone(code: `+${string}`, value: string | undefined | null
 }
 
 export function formatToCurrency(value: number): string {
-  return Intl.NumberFormat("fr-FR", { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(value);
+  return Intl.NumberFormat("fr-FR", { style: "currency", currency: "EUR", maximumFractionDigits: 2 }).format(value);
 }
 
 export function getPercent(price: number): string {
@@ -28,16 +28,22 @@ export function getPercent(price: number): string {
 export function getFullName(options: {
   firstName: string | null | undefined;
   lastName: string | null | undefined;
+  first_name: string | null | undefined;
+  last_name: string | null | undefined;
 }): string {
-  if (options.firstName && options.lastName) {
-    return `${options.firstName} ${options.lastName}`;
+  const firstName = options.firstName || options.first_name;
+  const lastName = options.lastName || options.last_name;
+
+  if (firstName && lastName) {
+    return `${firstName} ${lastName}`;
   }
-  if (options.firstName) {
-    return options.firstName;
+  if (firstName) {
+    return firstName;
   }
-  if (options.lastName) {
-    return options.lastName;
+  if (lastName) {
+    return lastName;
   }
+
   return "";
 }
 
