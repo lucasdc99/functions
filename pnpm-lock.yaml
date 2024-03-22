@@ -1,13 +1,9 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
   '@lucactus/zod':
-    specifier: ^1.0.4
-    version: 1.0.4
+    specifier: ^1.0.8
+    version: 1.0.8
 
 devDependencies:
   '@lucactus/prettier':
@@ -27,11 +23,11 @@ packages:
     resolution: {integrity: sha512-nWEt44feuX+xSflVeUfYc+UTf9dWFcKHdOCbWHubJ8zIc+qYBTsYdWTWa55Jr4LJdPe4pDHLlju4GhHYSLPyug==}
     dev: false
 
-  /@lucactus/zod@1.0.4:
-    resolution: {integrity: sha512-s4D8d2VFm5xHUocTKiJ19rJn3ps9oN88hubJZzYr4lqF2Ommvg7GnglAqjqbNtr1I/DAhWrbzQqmJVnOUQ8RNA==}
+  /@lucactus/zod@1.0.8:
+    resolution: {integrity: sha512-ncoAKPukBXwvJBlGMqtiK6vIztjHI6b1rx+kLnEaVhVnvE66w1kyImnZQBl3y1Lg1Fxl6giMl3lbyWwJsqkUsQ==}
     dependencies:
       '@lucactus/variables': 1.0.3
-      zod: 3.22.2
+      zod: 3.21.4
     dev: false
 
   /typescript@5.2.2:
@@ -40,6 +36,10 @@ packages:
     hasBin: true
     dev: true
 
-  /zod@3.22.2:
-    resolution: {integrity: sha512-wvWkphh5WQsJbVk1tbx1l1Ly4yg+XecD+Mq280uBGt9wa5BKSWf4Mhp6GmrkPixhMxmabYY7RbzlwVP32pbGCg==}
+  /zod@3.21.4:
+    resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
     dev: false
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false

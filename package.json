@@ -12,7 +12,7 @@
   "author": "Lucas De Curtis",
   "license": "ISC",
   "dependencies": {
-    "@lucactus/zod": "^1.0.4"
+    "@lucactus/zod": "^1.0.8"
   },
   "devDependencies": {
     "@lucactus/prettier": "^1.0.0",
